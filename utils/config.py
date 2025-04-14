@@ -1,7 +1,7 @@
 # utils/config.py
 import os
 
-GEMINI_API_KEY = os.getenv("AIzaSyBF77bxroQkBHJ2Q1PhUlHtJLb8yhruVi8", "")  # Will be set in Vercel
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")  # Will be set in Vercel
 WEBSITES = [
     "https://www.bannerbuzz.com/",
     "https://www.coversandall.com/",

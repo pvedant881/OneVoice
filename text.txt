@@ -1,0 +1,23 @@
+project/
+│
+├── api/                      # Vercel serverless functions
+│   └── app.py                # Main Flask app
+│
+├── data/                     # Local data files (pre-commit or link to cloud)
+│   ├── BB_BOS_vinyl_banner_category_data_nitinji (3).csv
+│   ├── BB_US_stands_customflags_product_data (1).csv
+│   ├── Production Support Sheet -2023.xlsx
+│   └── All Questions.xlsx
+│   └── crawled_data.json     # Pre-crawled website data (optional)
+│
+├── crawlers/                 # Web crawling logic
+│   └── website_crawler.py    # Web crawling functions
+│
+├── utils/                    # Utility functions and config
+│   ├── data_processor.py     # Data reading and chunking
+│   └── config.py             # Configuration
+│
+├── requirements.txt          # Python dependencies
+├── vercel.json              # Vercel configuration
+├── .gitignore               # Files to ignore
+└── README.md                # Project documentation

@@ -1,0 +1,17 @@
+# utils/config.py
+import os
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")  # Will be set in Vercel
+WEBSITES = [
+    "https://www.bannerbuzz.com/",
+    "https://www.coversandall.com/",
+    "https://www.bestofsigns.com/"
+]
+MAX_PAGES = 100  # Limit for web crawling (reduce for Vercel if needed)
+DATA_FILES = [
+    "data/BB_BOS_vinyl_banner_category_data_nitinji (3).csv",
+    "data/BB_US_stands_customflags_product_data (1).csv",
+    "data/Production Support Sheet -2023.xlsx",
+    "data/All Questions.xlsx"
+]
+CRAWLED_DATA_FILE = "data/crawled_data.json"  # File to store pre-crawled data

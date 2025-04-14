@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "chatbot/api/app.py",
+      "src": "OneVoice/api/app.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "chatbot/api/app.py"
+      "dest": "OneVoice/api/app.py"
     }
   ],
   "env": {
